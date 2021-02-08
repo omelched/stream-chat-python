@@ -6,7 +6,7 @@ from setuptools.command.test import test as TestCommand
 install_requires = [
     "pycryptodomex>=3.8.1,<4",
     "requests>=2.22.0,<3",
-    "aiohttp[speedups]>=3.6",
+    "aiohttp[speedups]>=4.0.0a1",
     "aiofile>=3.1,<4",
     "pyjwt>=2.0.0,<3",
 ]
@@ -59,7 +59,7 @@ setup(
     extras_require={"test": tests_require, "ci": ci_require},
     tests_require=tests_require,
     include_package_data=True,
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     classifiers=[
         "Intended Audience :: Developers",
         "Intended Audience :: System Administrators",
@@ -68,10 +68,10 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Natural Language :: English",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
 )
